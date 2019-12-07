@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfFiftens.WindowForBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFiftens"
+        mc:Ignorable="d"
+        Icon="C:\Users\User\Desktop\Universyti\OOTP\WpfFiftens\WpfFiftens\img\Icon.jpg"
+        Title="Пятнашки" Height="300" Width="300">
+    
+    <Grid>
+        <UniformGrid Name="uniformGrid" Margin="0,25,0,0"/>
+
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Меню">
+                <MenuItem Header="Розпочати нову гру" Click="MenuMainMenu" ></MenuItem>
+                <MenuItem Header="Здатися " Click="MenuSurrender" />
+                <Separator />
+                <MenuItem Header="Вихід" Click="MenuExit" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Налаштування" >
+                <MenuItem Header="Вернуть ход назад" Click="MoveBack"></MenuItem>
+                <CheckBox Name="chekbox1" Content="Hard mode" Checked="HardModeON" Unchecked="HardModeOFF"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
